@@ -8,6 +8,11 @@
 (define S3(random 1 11))
 (define S4(random 1 11))
 
+;2 sets of random big numbers are defined here for use later on
+;all the big numbers here a list of 25, 50, 75 and 100 and only one of these 4 values can be chosen
+(define B1(list-ref (list 25 50 75 100) (random 4)))
+(define B2(list-ref (list 25 50 75 100) (random 4)))
+
 ;T is our target number and thus has to be a random number between 101 and 999 (1000-1 allows us to have 999) inclusive
 (define T(random 101 1000))
 
@@ -16,4 +21,6 @@ S1
 S2
 S3
 S4
+B1
+B2
 T
