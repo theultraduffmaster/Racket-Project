@@ -38,6 +38,45 @@ T
 ;List of 2 items
 ;Define S1 as primary number Block of 2 number lists
 (fsum (list S1 S2))
+(fsum (list S1 S3))
+(fsum (list S1 S4))
+(fsum (list S1 B1))
+(fsum (list S1 B2))
+
+;Define S2 as primary number Block of 2 number lists
+(fsum (list S2 S1))
+(fsum (list S2 S3))
+(fsum (list S2 S4))
+(fsum (list S2 B1))
+(fsum (list S2 B2))
+
+;Define S3 as primary number Block of 2 number lists
+(fsum (list S3 S1))
+(fsum (list S3 S2))
+(fsum (list S3 S4))
+(fsum (list S3 B1))
+(fsum (list S3 B2))
+
+;Define S4 as primary number Block of 2 number lists
+(fsum (list S4 S1))
+(fsum (list S4 S2))
+(fsum (list S4 S3))
+(fsum (list S4 B1))
+(fsum (list S4 B2))
+
+;Define B1 as primary number Block of 2 number lists
+(fsum (list B1 S1))
+(fsum (list B1 S2))
+(fsum (list B1 S3))
+(fsum (list B1 S4))
+(fsum (list B1 B2))
+
+;Define B2 as primary number Block of 2 number lists
+(fsum (list B2 S1))
+(fsum (list B2 S2))
+(fsum (list B2 S3))
+(fsum (list B2 S4))
+(fsum (list B2 B1))
 
 ;List of 3 items
 ;Define S1 as primary number Block of 3 number lists
