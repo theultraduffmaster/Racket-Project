@@ -24,3 +24,34 @@ S4
 B1
 B2
 T
+
+
+(define (f oper id l)
+  (if (null? l)
+      id
+      (oper (car l) (f oper id (cdr l)))))
+
+(define (fsum l) (f + 0 l))
+
+(fsum (list S1 S2))
+
+
+
+(fsum (list S1 S2 S3))
+
+
+
+
+
+(fsum (list S1 S2 S3 S4))
+
+
+
+
+
+(fsum (list S1 S2 S3 S4 B1))
+
+
+
+
+(fsum (list S1 S2 S3 S4 B1 B2))
