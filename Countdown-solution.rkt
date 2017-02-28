@@ -81,6 +81,25 @@ T
 ;List of 3 items
 ;Define S1 as primary number Block of 3 number lists
 (fsum (list S1 S2 S3))
+(fsum (list S1 S2 S4))
+(fsum (list S1 S2 B1))
+(fsum (list S1 S2 B2))
+(fsum (list S1 S3 S2))
+(fsum (list S1 S3 S4))
+(fsum (list S1 S3 B1))
+(fsum (list S1 S3 B2))
+(fsum (list S1 S4 S2))
+(fsum (list S1 S4 S3))
+(fsum (list S1 S4 B1))
+(fsum (list S1 S4 B2))
+(fsum (list S1 B1 S2))
+(fsum (list S1 B1 S3))
+(fsum (list S1 B1 S4))
+(fsum (list S1 B1 B2))
+(fsum (list S1 B2 S2))
+(fsum (list S1 B2 S3))
+(fsum (list S1 B2 S4))
+(fsum (list S1 B2 B1))
 
 
 
