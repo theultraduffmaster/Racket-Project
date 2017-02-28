@@ -25,33 +25,40 @@ B1
 B2
 T
 
-
+;Function that will allow us to cycle through our operands in a later funtion
+;Adapted from Recursion.rkt by ianmcloughlin shown in class
 (define (f oper id l)
   (if (null? l)
       id
       (oper (car l) (f oper id (cdr l)))))
-
+;Here we use the function above to start the summing part of our cycling function
 (define (fsum l) (f + 0 l))
 
+;Summing function block
+;List of 2 items
+;Define S1 as primary number Block of 2 number lists
 (fsum (list S1 S2))
 
-
-
+;List of 3 items
+;Define S1 as primary number Block of 3 number lists
 (fsum (list S1 S2 S3))
 
 
 
 
-
+;List of 4 items
+;Define S1 as primary number Block of 4 number lists
 (fsum (list S1 S2 S3 S4))
 
 
 
 
-
+;List of 5 items
+;Define S1 as primary number Block of 5 number lists
 (fsum (list S1 S2 S3 S4 B1))
 
 
 
-
+;List of 6 items
+;Define S1 as primary number Block of 6 number lists
 (fsum (list S1 S2 S3 S4 B1 B2))
