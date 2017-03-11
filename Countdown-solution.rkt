@@ -25,14 +25,33 @@ B1
 B2
 T
 
+;Function allows us to define how we'll set up our functions for sum, multiply, divide and subtraction
 ;Function that will allow us to cycle through our operands in a later funtion
 ;Adapted from Recursion.rkt by ianmcloughlin shown in class
-(define (f oper id l)
+(define (f oper l)
   (if (null? l)
-      id
-      (oper (car l) (f oper id (cdr l)))))
+      0
+      (oper (car l) (f oper (cdr l)))))
+;Function changed for multiply and division due to 0 causing errors while 1 causes miscalulation on sum and subtract
+(define (f1 oper l)
+  (if (null? l)
+      1
+      (oper (car l) (f1 oper (cdr l)))))
 ;Here we use the function above to start the summing part of our cycling function
-(define (fsum l) (f + 0 l))
+(define (fsum l) (f + l))
+;Here we use the function above to start the multiplying part of our cycling function
+(define (fmult l) (f1 * l))
+;Here we use the function above to start the subtracting part of our cycling function
+(define (fsub l) (f - l))
+;Here we use the function above to start the dividing part of our cycling function
+(define (fdiv l) (f1 / l))
+;Here we define a list with all our operands so that we can instead use this function to save lines and recurse through our operands
+;Allowing us to not have to brute force our way to an answer but instead cycle through these operands and give us all the answers we are looking for
+(define loper (list fsum fmult fsub fdiv))
+ ;   (if (null? list)
+  ;      0
+   ;     ((car list)))
+
 
 ;Summing function block
 ;List of 2 items
