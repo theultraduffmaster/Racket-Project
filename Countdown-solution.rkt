@@ -25,16 +25,34 @@ B1
 B2
 T
 
+(define allnumbs(list S1
+S2
+S3
+S4
+B1
+B2))
+
 ;List of operands, cartesian product and permutations as shown in class
 (define ops(list '+ '-  '/  '*))
 
 (define all-ops(cartesian-product ops ops ops ops ops))
+;all-ops
 
-(define start-perm (list S1 S2 S3 S4 B1 B2))
+(define start-perm (cartesian-product allnumbs))
+
+(define (alladds l)
+   (map
+    (lambda (i) (apply + i))
+    (combinations l)))
+
+;(allcombs start-perm)
+;(alladds allnumbs)
+
 ;Remove duplicates so we don't get the same results more than once
 (define X(remove-duplicates(permutations start-perm)))
 ;Cartesian product of our permutated list and our list of operands
-(cartesian-product(list X all-ops))
+(define alloutcomes(remove-duplicates(cartesian-product  X all-ops)))
+alloutcomes
 ;Function allows us to define how we'll set up our functions for sum, multiply, divide and subtraction
 ;Function that will allow us to cycle through our operands in a later funtion
 ;Adapted from Recursion.rkt by ianmcloughlin shown in class
