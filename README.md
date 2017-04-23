@@ -16,5 +16,5 @@ Over the course of doing this project I found it to be very challenging and trie
 All the code for this project is wrote in the Countdown-Solution.rkt file where the file can be ran but it also can use the stacker.rkt which will allow the user to run all the code in Countdown-Solution file effectively acting as a "Runner" class but allowing the person 
 
 ### References
-http://beautifulracket.com - used for stacks
-https://github.com/theory-of-algorithms/example-scheme - examples used for reference and help from Dr. Ian McLoughlin
+1. http://beautifulracket.com - used for stacks
+1. https://github.com/theory-of-algorithms/example-scheme - examples used for reference and help from Dr. Ian McLoughlin
