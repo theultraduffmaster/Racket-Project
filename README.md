@@ -18,3 +18,4 @@ All the code for this project is wrote in the Countdown-Solution.rkt file where 
 ### References
 1. http://beautifulracket.com - used for stacks
 1. https://github.com/theory-of-algorithms/example-scheme - examples used for reference and help from Dr. Ian McLoughlin
+1. https://www.youtube.com/watch?v=FoPW4Ji6EAM&list=PLHqz-wcqDQIEThNEXViEb1iFh9vbOtUD_ - a video series I watched to understand more about Racket
